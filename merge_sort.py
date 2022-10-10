@@ -7,10 +7,8 @@ def merge_sort(lst):
         # Finding the mid of the array
         mid = len(lst) // 2
 
-        # Dividing the array elements
+        # Dividing the array elements into 2 halves
         left = lst[:mid]
-
-        # into 2 halves
         right = lst[mid:]
 
         # Sorting the first half
@@ -21,7 +19,7 @@ def merge_sort(lst):
 
         i = j = k = 0
 
-        # Copy data to temp arrays L[] and R[]
+        # Copy data to temp arrays left[] and right[]
         while i < len(left) and j < len(right):
             if left[i] <= right[j]:
                 lst[k] = left[i]
